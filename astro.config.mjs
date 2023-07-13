@@ -8,8 +8,7 @@ import { SITE } from "./src/config";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'okaberintaroubeta.github.io/',
-  base:'/blog',
+  site: SITE.website,
   integrations: [
     tailwind({
       config: {
