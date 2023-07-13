@@ -1,6 +1,7 @@
 {
   "name": "super-shell",
   "version": "2.3.0",
+  "homepage": "https://okaberintaroubeta.github.io/blog",
   "scripts": {
     "dev": "astro check --watch & astro dev",
     "start": "astro dev",
@@ -12,7 +13,9 @@
     "format": "prettier --plugin-search-dir=. --write .",
     "cz": "cz",
     "prepare": "husky install",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@astrojs/rss": "^2.4.1",
