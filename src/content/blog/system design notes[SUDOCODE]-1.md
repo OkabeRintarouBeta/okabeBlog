@@ -101,3 +101,116 @@ proxy: on one's behalf
 ### Quiz
 
 ## Data & Data Flow
+
+1. Datastores examples
+   - Databases, Cache, Queues(send sms request, send email request), Indexes(most searched items in 1 hour)
+2. How data is generated?
+   - Users
+   - Internal
+   - Insights(history:payment details)
+3. Factors to consider
+   1. Type of data
+   2. Volume
+   3. Consumption/Retrieval
+   4. Security
+4. Type of System
+   1. Authorization: user login,identity management
+   2. Streaming: Netflix, Hotstar, Prime Video
+   3. Transactional: E-commerce sites, ride booking apps, grocery ordering apps
+   4. Heavy Compute Systems: Image recognition systems, video processing using ML
+
+## Databases
+
+### Types of DBs
+
+- Relational
+- Non-relational
+- File
+- Network
+- ...
+
+1. Relational DB
+   - Schema
+     - Represent data in tables and rules
+     - Can represent complex data easily, ensures garbage or null value is not populated into the DB, ensure all schema constrained are followed
+   - ACID properties
+     - Atomicity: a transaction happens completely or doesn't happen at all
+     - Consistency: data is consistant on different sides
+     - Isolation: Two transactions do not interfere with each other
+     - Durability: Guarantees that transactions completed will survive permanently
+
+- Discussion
+  - When to choose:
+    - Need to support ACID properties
+    - Schema doesn't change
+  - When not:
+    - Schema isn't fixed
+    - Tables become huge
+    - Can scale vertically(increase the storage of one machine), but couldn't scale horizontally easily(divide into several DBs)
+
+2. Non-relational DBs
+
+- `Key: Value` storage
+- Store configuration related data, request:response, etc.
+
+3. Document DBs
+
+- Used when
+  - Not sure of the size/schema
+  - Support heavy reads and writes
+  - Details/properties can change overtime
+- Example format
+  ```json
+  [
+    {
+      "name": "Raj",
+      "age": 29,
+      "sex": "Male"
+    },
+    {
+      "name": "Kajal",
+      "age": 30,
+      "sex": "male"
+    }
+  ]
+  ```
+- Discussion
+  - Advantage
+    - Highly scalable
+    - Don't have to seach for multiple tables
+    - Support heavy reads and writes
+  - Disadvantage
+    - Might have to handle null values
+    - Don't provide ACID transactions
+
+4. Column DBs
+
+- Store interactions on streaming apps, health data, etc.
+- Do not support huge reads
+- Structured based on their functionality
+- Good support of distributed databases
+
+5. Seach DBs
+
+## Application Programming Interface (API)
+
+- What is API?
+  - One entity calls an API to do something to the other entity, the process behind the implementation is unknown
+- Why use API?
+  - Communication
+  - Abstraction: implementation can change, but the entity calling the API don't need to know about it
+  - Platform Agnostic: services in different language or platform can communicate through APIs
+- API Classification
+  - Private APIs
+    - hidden, only application running on the device could access it
+  - Public APIs
+    - Available to public, e.g. Spotify API
+  - Web APIs
+    - Application on cloud interact with each other
+  - SDK/Library APIs
+    - e.g. use in code, abstract
+- API standards
+  - RPC
+  - SOAP
+  - REST
+  - ...
