@@ -1,6 +1,6 @@
 ---
 author: Zihui
-pubDatetime: 2023-07-31T18:00:00Z
+pubDatetime: 2023-07-31T0:00:00Z
 title: How to use lldb
 postSlug: how-to-use-lldb
 featured: true
@@ -8,7 +8,7 @@ draft: false
 tags:
   - debug
   - C
-  - C++
+  - C Plus Plus
 ogImage: ""
 description: LLDB is an alternative for GDB on M1 chips.
 ---

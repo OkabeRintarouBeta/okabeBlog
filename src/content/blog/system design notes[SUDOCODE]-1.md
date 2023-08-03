@@ -1,6 +1,6 @@
 ---
 author: zihui
-pubDatetime: 2023-07-13T15:50:00Z
+pubDatetime: 2023-07-13T15:00:00Z
 title: SUDOCODE--System Design Notes1
 postSlug: system-design-notes
 featured: true
