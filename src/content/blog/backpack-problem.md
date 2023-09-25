@@ -18,7 +18,7 @@ description: 01 and complete backpack basics and examples on leetcode
 
 ## Category
 
-![img](../../../public/assets/leetcode/backpack/category.png)
+![img](https://github.com/OkabeRintarouBeta/okabeBlog/tree/main/public/assets/leetcode/backpack/category.png)
 
 ## 01 Backpack
 

@@ -1,6 +1,6 @@
 ---
 author: zihui
-pubDatetime: 2023-07-13T15:22:00Z
+pubDatetime: 2023-08-21T15:22:00Z
 title: Subarray Problem Summary
 postSlug: subarray-problem
 featured: true

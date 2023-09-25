@@ -43,14 +43,14 @@ What are the components that are absolutely necessary to build any kind of syste
 ### Client Type
 
 1. thin client: logic and data on the server(backend) side
-   <img src="../images/system_design_youtube/client_server_basic.jpg">
+   <img src="https://github.com/OkabeRintarouBeta/okabeBlog/tree/main/public/assets/system_design_youtube/client_server_basic.jpg">
    e.g. streaming platforms like Netflix
 2. thick client: logic and data on the client side
    - Many operation happening on the client side(e.g. video game)
 
 ### Structure(2-layer v.s. 3-layer)
 
-<img src="../images/system_design_youtube/client_server_basic2.jpg">
+<img src="https://github.com/OkabeRintarouBeta/okabeBlog/tree/main/public/assets/system_design_youtube/client_server_basic2.jpg">
 
 ### Quiz
 
